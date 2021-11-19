@@ -16,8 +16,10 @@ digraph application_state_diagram {
     Blog -> BlogPosting [label = <goBlogPosting, item (safe)> URL="docs/safe.goBlogPosting.html" target="_parent" fontsize=13];
     BlogPosting -> Blog [label = <goBlog, collection (safe)> URL="docs/safe.goBlog.html" target="_parent" fontsize=13];
     Index -> Blog [label = <goBlog, collection (safe)> URL="docs/safe.goBlog.html" target="_parent" fontsize=13];
+    actions -> Blog [label = <goBlog, collection (safe)> URL="docs/safe.goBlog.html" target="_parent" fontsize=13];
 
     About [label = <About> URL="docs/semantic.About.html" target="_parent"]
     Index [label = <Index> URL="docs/semantic.Index.html" target="_parent"]
+    actions [label = <actions> URL="docs/semantic.actions.html" target="_parent"]
 
 }
